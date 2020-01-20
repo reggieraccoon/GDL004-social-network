@@ -23,7 +23,7 @@ const buildElement = (typeElement, insertText, typeInput, nameID) => {
     } else if (typeElement === 'BUTTON') {
         variable.innerHTML = insertText;
         variable.setAttribute('type', 'submit');
-        
+
         document.getElementById(nameID).appendChild(variable);
     }
 }
@@ -36,15 +36,15 @@ const buildElement = (typeElement, insertText, typeInput, nameID) => {
     buildElement('INPUT', '', 'email', 'form-email');
     buildElement('INPUT', '', 'password', 'form-email');
     buildElement('BUTTON', 'Entrar', '', 'form-email');
-/*  
+/*
 const dynamicForm = (boolean) => {
     if(boolean === false) {
-        //  CREATE DYNAMIC FOR NEW USER 
+        //  CREATE DYNAMIC FOR NEW USER
         buildElement('FORM', 'REGISTRAR', ''); // in three spacio we write the text
         buildElement('INPUT', '', 'email');
         buildElement('INPUT', '', 'password');
         buildElement('BUTTON', 'Registrar');
-    
+
     } else if (boolean === true) {
         buildElement('FORM', 'ENTRAR', ''); // in three spacio we write the text
         buildElement('INPUT', '', 'email');
@@ -57,12 +57,12 @@ const dynamicForm = (boolean) => {
     buildElement('FORM', 'REGISTRAR', ''); // in three spacio we write the text
     buildElement('INPUT', '', 'email');
     buildElement('INPUT', '', 'password');
-    buildElement('BUTTON', 'Registrar');  
+    buildElement('BUTTON', 'Registrar');
 }
 
 let btnRegistroEmail = document.querySelector('#btnRegistrar');
 btnRegistroEmail.addEventListener('click', funcForm, false);
-  */  
+  */
  // NO dinamico
 // ************************** REGISTER NEW ACCOUNT FIREBASE ***************************
 //let formRegister = document.querySelector('#form-email');
@@ -95,11 +95,11 @@ formEnter.addEventListener('submit', enterUser, false); // NO dinamico
 
 function enterUser(event){
     event.preventDefault();
-    let userRegistered = event.target.emailRegistered.value;
-    let passwordUserRegistered = event.target.passwordRegistered.value;
+    let userRegistered = event.target.email.value;
+    let passwordUserRegistered = event.target.password.value;
 
     firebase.auth().signInWithEmailAndPassword(userRegistered, passwordUserRegistered)
-    
+
     .catch(function(error) {
         // Handle Errors here.
         let errorCode = error.code;
@@ -127,11 +127,11 @@ function infoUser() {
           // ...
         } else {
             console.log('no existe usuario activo');
-            
+
           // User is signed out.
           // ...
         }
-      });     
+      });
 }
 infoUser();
 
@@ -141,7 +141,7 @@ function watchUser() {
     <p>WELCOME</p>
      <button id="btnClosed">Sign off</button>
     `;
-    document.querySelector('#btnClosed').addEventListener('click', closed); 
+    document.querySelector('#btnClosed').addEventListener('click', closed);
 }
 
 function closed() {
@@ -150,7 +150,7 @@ function closed() {
         console.log('Saliendo...');
     })
     .catch(function(error) {
-    console.log(error);        
+    console.log(error);
     })
 }
 
@@ -163,13 +163,13 @@ let irAregistro = document.querySelector('#btnRegistrar');
 irAregistro.addEventListener('click', irHistory);
 
 function irHistory() {
-    
+
 }
 
-// ****** FORMULARIO 
+// ****** FORMULARIO
     const buildElementForm1 = () => {
         let formulario1 = document.createElement('FORM');
-            formulario1.innerHTML = 'REGISTRO'; 
+            formulario1.innerHTML = 'REGISTRO';
             formulario1.id = 'form-register-email';
             document.getElementById('form-create').appendChild(formulario1);
         let inputEmail  = document.createElement('INPUT');
@@ -188,4 +188,3 @@ function irHistory() {
             buttonUno.getElementById('form-register-email').appendChild(buttonUno);
         }
         buildElementForm1(); */
-
