@@ -1,4 +1,4 @@
-import {
+/* import {
     example
 } from './example.js';
 example();
@@ -51,9 +51,9 @@ const dynamicForm = (boolean) => {
         buildElement('INPUT', '', 'password');
         buildElement('BUTTON', 'Entrar');
     }
-}*/
+} */
 
-/*const funcForm = () => {
+/* const funcForm = () => {
     buildElement('FORM', 'REGISTRAR', ''); // in three spacio we write the text
     buildElement('INPUT', '', 'email');
     buildElement('INPUT', '', 'password');
@@ -63,11 +63,11 @@ const dynamicForm = (boolean) => {
 let btnRegistroEmail = document.querySelector('#btnRegistrar');
 btnRegistroEmail.addEventListener('click', funcForm, false);
   */
- // NO dinamico
+// NO dinamico
 // ************************** REGISTER NEW ACCOUNT FIREBASE ***************************
-//let formRegister = document.querySelector('#form-email');
-//formRegister.addEventListener('submit', registerAccount, false); // NO dinamico
-let formRegisterUser = document.querySelector('#form-register-email');
+// let formRegister = document.querySelector('#form-email');
+// formRegister.addEventListener('submit', registerAccount, false); // NO dinamico
+/* let formRegisterUser = document.querySelector('#form-register-email');
 formRegisterUser.addEventListener('submit', registerAccount, false); // dinamico
 
 function registerAccount(event) {
@@ -155,9 +155,6 @@ function closed() {
 }
 
 
-
-/*
-
 let irAregistro = document.querySelector('#btnRegistrar');
 
 irAregistro.addEventListener('click', irHistory);
@@ -187,4 +184,5 @@ function irHistory() {
             buttonUno.setAttribute('type', 'submit');
             buttonUno.getElementById('form-register-email').appendChild(buttonUno);
         }
-        buildElementForm1(); */
+        buildElementForm1();
+        */
