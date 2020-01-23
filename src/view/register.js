@@ -11,9 +11,9 @@ export default () => {
   <form id="form-emailRegistra">
       <input name="email" type="email" id="formInputEmail-reg" placeholder="email"></br>
       <input name="password" type="password" id="formInputPassw-reg" placeholder="password"></br>
-      <button type="submit" id="btn-email-reg">Registrar</button></br>
+      <button type="submit" id="btn-email-reg">Registrar</button></br> 
    </form>`
-
+// El botón anterior debe de llevar al home
    let btn = viewRegister.querySelector("#btn-email-reg");
    btn.addEventListener('click', registerAccount);
 

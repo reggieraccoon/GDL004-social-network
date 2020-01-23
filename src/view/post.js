@@ -16,9 +16,9 @@ export default () => {
       <button type="submit" id="btn-addPost">Publicar</button></br>
 
       <div>
-      <button> Galeria </button>
+      <button> Galería </button>
       <select>
-          <option>Publico</option>
+          <option>Público</option>
           <option>Privado</option>
       </select>
       </div> 
@@ -44,9 +44,9 @@ viewPost.appendChild(buildElement('BUTTON', 'Galeria', '', 'form-post'));*/
     butonSelect.innerHTML =
     `
         <div>
-            <button> Galeria </button>
+            <button> Galería </button>
             <select>
-                <option>Publico</option>
+                <option>Público</option>
                 <option>Privado</option>
             </select>
         </div> 

@@ -16,8 +16,9 @@ export default () => {
       <input name="password" type="password" id="formInputPassw" placeholder="password"></br>
       <button type="submit" id="btn-email"><a href="#/post">Iniciar sesión</a></button></br>
       
-      <button type="submit" id="register"><a href="#/register">regístrate</a></button></br></br>
-   </form>`
+      <button type="submit" id="register"><a href="#/register">Regístrate</a></button></br></br>
+   </form>` //este botón debe de llevarte al formulario para registrarte
+   
   //const divElem = document.createElement('div');
   //divElem.innerHTML = viewWelcome;
 
