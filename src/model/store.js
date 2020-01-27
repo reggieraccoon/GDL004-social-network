@@ -21,7 +21,7 @@ export function registerAccount() {
   /* const user = event.target.email.value;
   const passwordUser = event.target.password.value;
   firebase.auth().createUserWithEmailAndPassword(user, passwordUser)
-
+    
     .catch((error) => {
       // Handle Errors here.
       const errorCode = error.code;
@@ -48,16 +48,16 @@ export function enterUser() {
 
   /* const userRegistered = event.target.email.value;
   const passwordUserRegistered = event.target.password.value;
-
+  
   firebase.auth().signInWithEmailAndPassword(userRegistered, passwordUserRegistered)
-
+  
     .catch((error) => {
       // Handle Errors here.
       const errorCode = error.code;
       const errorMessage = error.message;
       console.log(errorCode);
       console.log(errorMessage);
-
+     
       // ...
     }); */
 }

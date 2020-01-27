@@ -33,8 +33,8 @@ export default () => {
       </div> 
       </br>
    </form>
-
    
+
   `;
 
   const btn = viewPost.querySelector('#btn-addPost');

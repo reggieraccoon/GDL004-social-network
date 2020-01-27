@@ -31,12 +31,12 @@ export const changeView = (route) => {
   formCreate.innerHTML = '';
   // lo insertamos en el elemento #form-create
   Welcome();
-
+  
   const formCreatePost = document.getElementById('contentHome');
   formCreatePost.innerHTML = '';
   // lo insertamos en el elemento #form-post
   Post();
-
+  
   const formCreateRegister = document.getElementById('contentUser');
   formCreateRegister.innerHTML = '';
   // lo insertamos en el elemento #form-post

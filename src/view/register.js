@@ -13,8 +13,8 @@ export default () => {
       
       <button type="submit" id="btn-email-reg"><a href="#/home">Registrar</a></button></br>
       <button type="submit" id="btn-email-Welcome"><a href="#/welcome">Iniciar sesión</a></button></br>
-
-   </form>`;
+  
+      </form>`;
 
   const btn = viewRegister.querySelector('#btn-email-reg');
   btn.addEventListener('click', registerAccount);
@@ -29,10 +29,11 @@ export default () => {
  viewRegistrar.appendChild(buildElement('INPUT', '', 'email', 'form-register-email'));
  viewRegistrar.appendChild(buildElement('INPUT', '', 'password', 'form-register-email'));
  viewRegistrar.appendChild(buildElement('BUTTON', 'Registrar', '', 'form-register-email')); // iniciar sesion te envia al home, muestra todo tu perfil
-
-   const divElem = document.createElement('div');
+  
+    const divElem = document.createElement('div');
    divElem.innerHTML = viewRegistrar;
-
+   
    return divElem;
   }
    */
+  

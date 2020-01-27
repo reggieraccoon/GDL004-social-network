@@ -33,7 +33,7 @@ document.querySelector('#btnClosed').addEventListener('click', closed);
  export const hashChange = (ruta) => {
  let changeSection = document.getElementById('container');
  changeSection.innerHTML = '';
-
+  
   switch (ruta) {
     case '':
     case '#':
@@ -45,8 +45,8 @@ document.querySelector('#btnClosed').addEventListener('click', closed);
       return changeSection.appendChild(components.register());
     case '#/post':
       return changeSection.appendChild(components.post());
-
-    default:
+    
+      default:
       break;
   }
   console.log(ruta);

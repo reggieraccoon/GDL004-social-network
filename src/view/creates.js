@@ -40,4 +40,3 @@ export const buildElement = (typeElement, insertText, typeInput, nameID, formId)
   }
   return variable;
 };
-
