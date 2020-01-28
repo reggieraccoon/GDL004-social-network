@@ -8,45 +8,35 @@ export default () => {
   viewWelcome.innerHTML = `
     <form id="form-emailEnter">
       <input name="email" type="email" id="formInputEmail" placeholder="email"></br>
-      <p id="errorMessageEmail"></p>
       <input name="password" type="password" id="formInputPassw" placeholder="password" minlength=1></br>
-      <p id="errorMessagePassword"></p>
-      <button type="submit" id="btn-email"><a href="#/home">Iniciar sesión</a></button></br>
-      
-      <button type="submit" id="register"><a href="#/register">regístrate</a></button></br></br>
+      <button class="buttons" type="submit" id="btn-email"><a href="#/home">Iniciar sesión</a></button></br>
+
+      <button class="buttons btnreg" type="submit" id="register"><a href="#/register">regístrate</a></button></br></br>
     <div id=containerEmpty>
     </div>
-   
+
     </form>`;
 
   const btn = viewWelcome.querySelector('#btn-email');
   btn.addEventListener('click', enterUser);
 
+  viewWelcome.classList.add('d-flex','justify-content-center','align-items-center','flex-direction-column','vh-100');
   // document.getElementById('form-create').appendChild(viewWelcome);
   return viewWelcome;
 };
 
 /*
-document.getElementById('form-create');// creando el div en HTML
-  viewWelcome.appendChild(buildElement('FORM', 'Iniciar sesión', '', 'form-email')); // añadir al div (con appendChild) cada uno de los elementos que se crean con el build Element
-  viewWelcome.appendChild(buildElement('INPUT', '', 'email', 'form-email'));
-  viewWelcome.appendChild(buildElement('INPUT', '', 'password', 'form-email'));
-  viewWelcome.appendChild(buildElement('BUTTON', 'Iniciar Sesion', '', 'form-email')); // iniciar sesion te envia al home, muestra todo tu perfil
-  // Ejecutar funcion enterUser (iniciar sesión) al hacer (click/submit)
-const formEnter = document.querySelector('#form-email');
-formEnter.addEventListener('submit', enterUser);
-  
 
-  const buttonFacebook = document.createElement('div');
+const buttonFacebook = document.createElement('div');
   const domString = '<div class="fb-login-button" data-width="" data-size="medium" data-button-type="login_with" data-auto-logout-link="true" data-use-continue-as="true"></div>';
   buttonFacebook.innerHTML = domString;
   viewWelcome.appendChild(buttonFacebook.firstChild);
-  
+
   const buttonGoogle = document.createElement('div');
   const domDiv = '<div class="g-signin2" data-onsuccess="onSignIn"></div>';
   buttonGoogle.innerHTML = domDiv;
   viewWelcome.appendChild(buttonGoogle.firstChild);
-  
+
   buildElement('a', 'Registrar', '', 'form-email'); // al hacer click te enviaria al formulario de registro
 */
 

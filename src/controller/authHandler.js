@@ -22,24 +22,29 @@ const providerGoogle = new firebase.auth.GoogleAuthProvider();
 export const facebookLogin = () => firebase.auth().signInWithRedirect(providerFacebook);
 export const googleLogin = () => firebase.auth().signInWithRedirect(providerGoogle);
 
-export const redirectResult = () => firebase.auth().getRedirectResult().then((result) => {
-  if (result.credential) {
-    // This gives you a Facebook Access Token. You can use it to access the Facebook API.
-    const token = result.credential.accessToken;
-  }
-  // The signed-in user info.
-  const user = result.user;
-}).catch((error) => {
-  // Handle Errors here.
-  const errorCode = error.code;
-  const errorMessage = error.message;
-  // The email of the user's account used.
-  const email = error.email;
-  // The firebase.auth.AuthCredential type that was used.
-  const credential = error.credential;
-  console.log(errorCode);
-  console.log(errorMessage);
-  console.log(email);
-  console.log(credential);
-});
+*/
+
+
+/*
+const dataEnter = getEnter(email);
+viewWelcome();
+// Ejecutar funcion enterUser (iniciar sesión) al hacer (click/submit)
+// export const formEnter = document.querySelector('#form-email');
+// formEnter.addEventListener('submit', enterUser, false);
+/*
+document.querySelector('#btnClosed').addEventListener('click', closed);
+
+export const signInAuth = (email, password) =>
+  firebase.auth().signInWithEmailAndPassword(email, password)
+
+  // Ejecutar funcion registerAccount (registrarse) al hacer (click/submit)
+// export const formRegisterUser = document.querySelector('#form-register-email');
+// formRegisterUser.addEventListener('submit', registerAccount, false);
+
+// Al hacer click en botón sign Off, ejecuta la función closed (cerrar sesión)
+document.querySelector('#btnClosed').addEventListener('click', closed);
+
+const btnPost = document.querySelector('#btn-addPost');
+btnPost.addEventListener('click', addPost);
+
 */
