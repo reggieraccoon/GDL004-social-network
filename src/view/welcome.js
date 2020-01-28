@@ -1,11 +1,7 @@
 import {
-  buildElement,
-} from './creates.js';
-import {
   enterUser,
 } from '../model/store.js';
 
-// import { formEnter } from '../controler/todo.js'; // hacer que se importe la funcion formEnter esta en store.js
 
 export default () => {
   const viewWelcome = document.createElement('div');
@@ -40,6 +36,7 @@ document.getElementById('form-create');// creando el div en HTML
 const formEnter = document.querySelector('#form-email');
 formEnter.addEventListener('submit', enterUser);
   
+
   const buttonFacebook = document.createElement('div');
   const domString = '<div class="fb-login-button" data-width="" data-size="medium" data-button-type="login_with" data-auto-logout-link="true" data-use-continue-as="true"></div>';
   buttonFacebook.innerHTML = domString;
