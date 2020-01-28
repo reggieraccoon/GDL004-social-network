@@ -37,12 +37,13 @@ export function enterUser() {
   const emailValidationResult = validateEmail(email.value);
   if (emailValidationResult === false) {
     //let empty = document.querySelector('#containerEmpty');
-    alert('Please enter the fddd');
+    document.getElementById("errorMessageEmail").innerHTML= "Please enter an e-mail";
   }
   const password = document.querySelector('#formInputPassw').required;
   if (password === false) {
-    alert('Please enter the password');
+    document.getElementById("errorMessagePassword").innerHTML= "Please enter a password";
   }
+
   console.log(emailValidationResult);
   console.log('funciona model/store ENTER');
 

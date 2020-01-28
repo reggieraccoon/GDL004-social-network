@@ -12,7 +12,9 @@ export default () => {
   viewWelcome.innerHTML = `
     <form id="form-emailEnter">
       <input name="email" type="email" id="formInputEmail" placeholder="email"></br>
+      <p id="errorMessageEmail"></p>
       <input name="password" type="password" id="formInputPassw" placeholder="password" minlength=1></br>
+      <p id="errorMessagePassword"></p>
       <button type="submit" id="btn-email"><a href="#/home">Iniciar sesión</a></button></br>
       
       <button type="submit" id="register"><a href="#/register">regístrate</a></button></br></br>

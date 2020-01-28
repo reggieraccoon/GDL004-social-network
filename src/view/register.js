@@ -32,7 +32,7 @@ export default () => {
   
     const divElem = document.createElement('div');
    divElem.innerHTML = viewRegistrar;
-   
+  
    return divElem;
   }
    */

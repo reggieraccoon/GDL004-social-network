@@ -15,7 +15,7 @@ export default () => {
 
   <button id="btnClosed">Sign off</button>
     
-  <h2 class="text-center">!HOLA BIENVENIDO¡</h2>
+  <h2 class="text-center">¡HOLA BIENVENIDO¡</h2>
  <figure class="text-center">
  <img class="image" src="img/perrito-saluda.gif" alt="perrito saluda">
  </figure>
@@ -25,9 +25,9 @@ export default () => {
       <input name="post" type="text" id="addPost" placeholder="¿Qué te gustaría compartir hoy?"></br>
       <button type="submit" id="btn-addPost">Publicar</button></br>
       <div>
-      <button> Galeria </button>
+      <button> Galería </button>
       <select>
-          <option>Publico</option>
+          <option>Público</option>
           <option>Privado</option>
       </select>
       </div> 
@@ -48,7 +48,7 @@ export default () => {
 export const watchUser = `
      <button id="btnClosed">Sign off</button>
     
-     <h2 class="text-center">!HOLA BIENVENIDO¡</h2>
+     <h2 class="text-center">¡HOLA BIENVENIDO¡</h2>
     <figure class="text-center">
     <img class="image" src="img/perrito-saluda.gif" alt="perrito saluda">
     </figure>
